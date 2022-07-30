@@ -15,7 +15,7 @@ export function Signin() {
 
 const styles = StyleSheet.create({
   container:  {
-    backgroundColor: '#050f00',
+    backgroundColor: '#000000',
     flex: 1,
     padding: 24,
     justifyContent: 'center',
