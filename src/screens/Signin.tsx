@@ -30,6 +30,7 @@ export function Signin() {
       <MyButton
       title="Fazer login"
       />
+
       <View
       style={ styles.createAccountContainer }
       >
@@ -41,7 +42,8 @@ export function Signin() {
         <Pressable>
           <Text
             style={styles.createAccountPressableText}
-          > Crie uma agora!</Text>
+          > Crie uma agora!
+          </Text>
         </Pressable>
       </View>
 

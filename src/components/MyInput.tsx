@@ -9,7 +9,8 @@ export function MyInput({ title, ...rest }: Props) {
         <TextInput
         style={ styles.TextInput }
         placeholder={ title }
-        placeholderTextColor='#95D5B2'    
+        placeholderTextColor='#95D5B2'  
+        { ...rest }
         />
     );
 }
