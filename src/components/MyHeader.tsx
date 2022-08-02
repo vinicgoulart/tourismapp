@@ -1,4 +1,5 @@
 import { View, Text, Image, StyleSheet } from "react-native";
+import { ArrowLeft } from 'phosphor-react-native';
 
 type Props = {
     title: string,
@@ -11,8 +12,8 @@ export function MyHeader({ title, ...rest }: Props) {
         style={ styles.headerContainer }
         >
             <Image
-                source={require('../images/logo-500x500.png')}
-                style={ styles.logoImage }
+            source={ require('../images/logo-without-borders.png') }
+            style={ styles.logoImage }
             />
 
             <Text
@@ -21,7 +22,9 @@ export function MyHeader({ title, ...rest }: Props) {
                 { title }
             </Text>
 
-            {/* <ArrowLeft color="white" /> */}
+            <ArrowLeft
+            color="white"
+            />
         </View>
     );
 }
@@ -32,7 +35,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#081C15',
         alignItems: 'center',
         justifyContent: 'space-between',
-        padding: 10
+        padding: 5
     },
     title: {
         color: 'white'
